@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   ShopKart &ndash; Discover More. Shop Smart.
+  </title>
+  <meta content="ShopKart is an Indian online marketplace for fashion, home, beauty and electronics at great prices." name="description"/>
+  <meta content="ShopKart &ndash; Discover More. Shop Smart." property="og:title"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="bar text-center small py-1">
+   Free delivery on orders above ₹499
+  </div>
+  <header class="sk-header sticky-top">
+   <div class="container d-flex align-items-center gap-3 py-2">
+    <a class="brand" href="index.html">
+     Shop
+     <span>
+      Kart
+     </span>
+    </a>
+    <div class="search flex-grow-1 position-relative">
+     <i class="bi bi-search">
+     </i>
+     <input aria-label="Search products" autocomplete="off" class="form-control" id="searchInput" placeholder="Search for kurti, shoes, watch&hellip;" type="search"/>
+     <ul class="list-unstyled shadow" id="suggest">
+     </ul>
+    </div>
+    <button aria-label="Toggle dark mode" class="icon-btn" id="themeBtn">
+     <i class="bi bi-moon">
+     </i>
+    </button>
+    <button aria-label="Show wishlist" class="icon-btn" id="wishBtn">
+     <i class="bi bi-heart">
+     </i>
+     <b id="wishCount">
+      0
+     </b>
+    </button>
+    <button aria-label="Open cart" class="icon-btn" data-bs-target="#cartDrawer" data-bs-toggle="offcanvas" id="cartBtn">
+     <i class="bi bi-bag">
+     </i>
+     <b id="cartCount">
+      0
+     </b>
+    </button>
+   </div>
+  </header>
+  <section class="hero">
+   <div class="container">
+    <h1>
+     Trending styles at prices that make sense.
+    </h1>
+    <p>
+     Fashion, home and gadgets from trusted sellers across India.
+    </p>
+    <a class="btn btn-sk" href="#grid">
+     Shop now
+    </a>
+   </div>
+  </section>
+  <main class="container py-4">
+   <div class="d-flex flex-wrap gap-2 mb-3" id="chips" role="tablist">
+   </div>
+   <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="h5 m-0" id="resultTitle">
+     All products
+    </h2>
+    <select aria-label="Sort products" class="form-select w-auto" id="sort">
+     <option value="pop">
+      Popularity
+     </option>
+     <option value="low">
+      Price: low to high
+     </option>
+     <option value="high">
+      Price: high to low
+     </option>
+     <option value="rate">
+      Rating
+     </option>
+     <option value="disc">
+      Discount
+     </option>
+    </select>
+   </div>
+   <div class="row g-3" id="grid">
+   </div>
+  </main>
+  <footer class="py-4 text-center small">
+   <div>
+    &copy; 2026 ShopKart &middot; Demo project, no real payments
+   </div>
+   <div>
+    Designed by KoriviYaswanth &middot; WhatsApp 8125807927
+   </div>
+  </footer>
+  <div aria-labelledby="cartTitle" class="offcanvas offcanvas-end" id="cartDrawer" tabindex="-1">
+   <div class="offcanvas-header">
+    <h5 class="m-0" id="cartTitle">
+     Your cart
+    </h5>
+    <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas">
+    </button>
+   </div>
+   <div class="offcanvas-body d-flex flex-column">
+    <div class="flex-grow-1" id="cartItems">
+    </div>
+    <div class="input-group my-2">
+     <input class="form-control" id="coupon" placeholder="Coupon code"/>
+     <button class="btn btn-outline-secondary" id="applyCoupon">
+      Apply
+     </button>
+    </div>
+    <div class="small" id="totals">
+    </div>
+    <button class="btn btn-sk w-100 mt-2" id="checkout">
+     Place demo order
+    </button>
+   </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+   <div class="toast text-bg-dark" id="toast" role="status">
+    <div class="toast-body" id="toastMsg">
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/products.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>

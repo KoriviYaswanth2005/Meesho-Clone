@@ -1,0 +1,46 @@
+{
+  "project": "Meesho Clone - Combined",
+  "official": false,
+  "primary_source": "shopzy_meesho_clone",
+  "combined_sources": [
+    "meesho-clone.zip",
+    "MEESHO CLONE PROJECT.zip",
+    "files_update.zip"
+  ],
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Bootstrap 5",
+    "Bootstrap Icons"
+  ],
+  "pages": [
+    "404.html",
+    "about.html",
+    "address.html",
+    "cart.html",
+    "categories.html",
+    "checkout.html",
+    "contact.html",
+    "help.html",
+    "index.html",
+    "login.html",
+    "notifications.html",
+    "offers.html",
+    "order-success.html",
+    "orders.html",
+    "otp.html",
+    "payment.html",
+    "privacy.html",
+    "product-details.html",
+    "products.html",
+    "profile.html",
+    "returns.html",
+    "search.html",
+    "seller.html",
+    "signup.html",
+    "terms.html",
+    "track-order.html",
+    "wishlist.html"
+  ]
+}

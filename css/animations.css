@@ -1,0 +1,171 @@
+.fade-up,.fade-left,.fade-right,.scale-in
+{
+    opacity:0;
+    transition:opacity .7s ease,transform .7s ease
+}
+.fade-up
+{
+    transform:translateY(25px)
+}
+.fade-left
+{
+    transform:translateX(-25px)
+}
+.fade-right
+{
+    transform:translateX(25px)
+}
+.scale-in
+{
+    transform:scale(.94)
+}
+.in-view
+{
+    opacity:1;
+    transform:none
+}
+.float
+{
+    animation:float 4s ease-in-out infinite
+}
+.pulse
+{
+    animation:pulse 2s ease-in-out infinite
+}
+.heart-pop
+{
+    animation:heartPop .35s ease
+}
+.cart-bounce
+{
+    animation:cartBounce .55s ease
+}
+.toast-slide
+{
+    animation:toastSlide .35s ease
+}
+.shimmer
+{
+    animation:shimmer 1.3s linear infinite
+}
+.ripple
+{
+    position:relative;
+    overflow:hidden
+}
+.ripple:after
+{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    width:10px;
+    height:10px;
+    background:#fff7;
+    transform:scale(0);
+    animation:ripple .6s ease
+}
+.page-enter
+{
+    animation:pageEnter .45s ease
+}
+.hero-copy>*
+{
+    animation:heroIn .75s ease both
+}
+.hero-copy h1
+{
+    animation-delay:.1s
+}
+.hero-copy p
+{
+    animation-delay:.2s
+}
+.hero-copy .hero-actions
+{
+    animation-delay:.3s
+}
+@keyframes float
+{
+    0%,100%
+    {
+        transform:translateY(0) rotate(-2deg)
+    }
+    50%
+    {
+        transform:translateY(-13px) rotate(2deg)
+    }
+}
+@keyframes pulse
+{
+    50%
+    {
+        transform:scale(1.04)
+    }
+}
+@keyframes heartPop
+{
+    50%
+    {
+        transform:scale(1.35)
+    }
+    100%
+    {
+        transform:scale(1)
+    }
+}
+@keyframes cartBounce
+{
+    30%
+    {
+        transform:translateY(-7px) rotate(-6deg)
+    }
+    60%
+    {
+        transform:translateY(2px) rotate(4deg)
+    }
+}
+@keyframes shimmer
+{
+    0%
+    {
+        background-position:100% 0
+    }
+    100%
+    {
+        background-position:-100% 0
+    }
+}
+@keyframes ripple
+{
+    to
+    {
+        transform:scale(18);
+        opacity:0
+    }
+}
+@keyframes pageEnter
+{
+    from
+    {
+        opacity:0;
+        transform:translateY(8px)
+    }
+    to
+    {
+        opacity:1;
+        transform:none
+    }
+}
+@keyframes heroIn
+{
+    from
+    {
+        opacity:0;
+        transform:translateY(20px)
+    }
+    to
+    {
+        opacity:1;
+        transform:none
+    }
+}
